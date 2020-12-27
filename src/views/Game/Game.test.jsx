@@ -1,7 +1,7 @@
 import Game from "./Game";
 import store from "../../store";
 import { Provider } from "react-redux";
-import { render, act, screen } from "@testing-library/react";
+import { render, act } from "@testing-library/react";
 import { fetchQuestion } from "./fetchData";
 
 jest.mock("react-router-dom", () => ({

@@ -1,5 +1,3 @@
-import { setAnswer } from "./actions";
-
 export enum QuestionTypes {
   setQuestion = "@setQuestion",
   resetHistory = "@resetHistory",
