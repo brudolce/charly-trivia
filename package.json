@@ -52,10 +52,15 @@
     "collectCoverageFrom": [
       "src/**/*.ts",
       "src/**/*.tsx",
+      "src/**/*.jsx",
+      "src/**/*.js",
       "!src/index.tsx",
       "!src/setupTests.ts",
       "!src/reportWebVitals.ts",
       "!src/react-app-env.d.ts"
     ]
+  },
+  "devDependencies": {
+    "jest-fetch-mock": "^3.0.3"
   }
 }

@@ -10,7 +10,7 @@ import {
   setWin,
 } from "../../store/ducks/question/actions";
 import { setTime } from "../../store/ducks/time/actions";
-import { QuestionObject } from "../../store/ducks/question/types";
+import { fetchQuestion } from "./fetchData";
 import Clock from "../../components/Clock/Clock";
 import Form from "../../components/Form/Form";
 import Score from "../../components/Score/Score";
@@ -26,11 +26,7 @@ const Game: React.FC = () => {
   const store = useSelector((reduxStore: ApplicationStore) => reduxStore);
 
   //methods - fetching data
-  const fetchQuestion = async (): Promise<QuestionObject> => {
-    const res = await fetch("http://jservice.io/api/random");
-    const data = await res.json();
-    return data[0];
-  };
+
   const getQuestion = async () => {
     let data = await fetchQuestion();
     while (store.question.history[data.id]) {

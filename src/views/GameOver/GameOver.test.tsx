@@ -3,7 +3,7 @@ import store from "../../store";
 import { Provider } from "react-redux";
 import { render } from "@testing-library/react";
 
-describe("App", () => {
+describe("GameOver view", () => {
   const gameOver = render(
     <Provider store={store}>
       <GameOver />
