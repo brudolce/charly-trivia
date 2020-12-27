@@ -51,7 +51,7 @@ export default class AppStyles {
     };
   }
 
-  static factory(bf = false): AppStyles {
+  static factory(): AppStyles {
     return new AppStyles();
   }
 }
