@@ -1,3 +1,3 @@
 # React Quiz Test
 
-Api available at http://jservice.io.
+Api available at https://jservice.io.
